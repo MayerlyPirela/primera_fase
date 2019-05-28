@@ -7,7 +7,68 @@
 </div>
 
 <app-productos></app-productos>
-<app-list-products></app-list-products>
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+  <div class="col-md-5 p-lg-5 mx-auto my-5">
+    <h1 class="display-4 font-weight-normal">Listado de productos</h1>
+  </div>
+  <div class="product-device shadow-sm d-none d-md-block"></div>
+  <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>
+
+<table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Stock</th>
+            <th scope="col">Sku</th>
+            <th scope="col">Precio por menor</th>
+            <th scope="col">Posición</th>
+            <th scope="col">Porcentaje</th>
+            <th scope="col">Ruta del producto</th>
+            <th scope="col">Nombre del producto</th>
+            <th scope="col">Precio de importación</th>
+            <th scope="col">Imagen del producto</th>
+            <th scope="col">Destacado</th>
+            <th scope="col">Campaña</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products">
+              <td>{{product._id}}</td>
+              <td>{{product.stock}}</td>
+              <td>{{product.sku_product}}</td>
+              <td>{{product.retail_price}}</td>
+              <td>{{product.position}}</td>
+              <td>{{product.percentage}}</td>
+              <td>{{product.path_product}}</td>
+              <td>{{product.name_product}}</td>
+              <td>{{product.importclub_price}}</td>
+              <td>{{product.img_product}}</td>
+              <td>{{product.featured}}</td>
+              <td>{{product.campaign_type}}</td>
+          </tr>
+          
+          
+        </tbody>
+      </table>
+      
+
+
+
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+      <small class="d-block mb-3 text-muted">&copy; Mayerly Pirela</small>
+    </div>
+    
+  
+    
+  </div>
+</footer>
+
  
 
 

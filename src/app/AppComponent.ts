@@ -8,7 +8,7 @@ import { ListProductsServiceService } from './productos/service/list-products-se
 })
 export class AppComponent implements OnInit{
   title = 'Bienvenido a la primera fase, realizando un proyecto de frontend con Angular';
-  user: any[] = [];
+  products: any[] = [];
  
   constructor(
     protected ListProductsServiceService: ListProductsServiceService
@@ -20,8 +20,8 @@ export class AppComponent implements OnInit{
     .subscribe(
       (data) => {
         
-        this.user =Object.values(data)[1];
-console.log(this.user)
+        this.products =Object.values(data)[1];
+console.log(this.products)
       },
       (error) => {
         console.error(error);
