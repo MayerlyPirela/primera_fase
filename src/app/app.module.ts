@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from "./AppComponent";
 import { ProductosComponent } from './productos/productos.component';
 import { ListProductsComponent } from './productos/list-products/list-products.component';
-import { NavbarComponent } from './navbar.component';
 import { ListProductsServiceService } from './productos/service/list-products-service.service';
 
 
@@ -14,7 +13,7 @@ import { ListProductsServiceService } from './productos/service/list-products-se
     AppComponent,
     ProductosComponent,
     ListProductsComponent,
-    NavbarComponent,
+  
     
    
   ],
