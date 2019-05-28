@@ -7,8 +7,11 @@
 </div>
 
 <app-productos></app-productos>
-<ul>
-  <li *ngFor="let movie of movies">{{producto.title}} : {{producto.genre}} : {{movie.year}}</li>
-</ul> 
+<div *ngIf="data">
+
+  {{data}}
+
+</div>
+ 
 
 

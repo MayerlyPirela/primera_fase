@@ -5,10 +5,11 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ListProductsServiceService {
-  
-  constructor(private http:HttpClient) { }
+
+  constructor(protected http:HttpClient) { }
 
   getProductos() {
+   
     return this.http.get('https://testapi.io/api/hilderh/products/home');
   }
 }
