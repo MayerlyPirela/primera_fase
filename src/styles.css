@@ -23,22 +23,35 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     font-weight: normal;
     font-style: normal;
 }
-body{
-    width: 1200px;
-    margin: auto;
+
+.contenedor{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+
+
+}
+.principal{
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+table{
+    width: 70%;
+    height: auto;
+    overflow: scroll;
 }
 h1{
     color: rgb(20, 23, 220);
     font-family: './font/Righteous', Arial, Helvetica, sans-serif;
     font-size: 250%;
-    padding: 25px;
-    
+ 
 }
 h2{
     font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 10px 15px 5px;
-}
+  }
 
 
 
